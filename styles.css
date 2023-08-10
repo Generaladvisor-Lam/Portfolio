@@ -25,8 +25,8 @@ header {
   justify-content: center;
   color: gold;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-decoration: none;
   background-color: rgb(0, 33, 0);
   cursor: pointer;
@@ -56,8 +56,8 @@ footer {
   margin: 0 auto;
   list-style-type: none;
   font-size: small;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .left {
@@ -68,7 +68,8 @@ footer {
   text-align: right;
 }
 
-footer a {
+footer a,
+.wideSection a {
   color: gold;
   display: block;
   text-align: center;
@@ -78,19 +79,32 @@ footer a {
   transition: background-color 0.5s, color 0.5s;
 }
 
-footer a:hover {
+.wideSection a {
+  border: 2px solid gold;
+}
+
+footer a:hover,
+.wideSection a:hover {
   color: rgb(0, 33, 0);
   background-color: gold;
 }
 
 .title,
+.smallTitle,
 .wideSection h2 {
   text-align: center;
   color: rgb(0, 60, 0);
   margin-top: 7%;
   margin-bottom: 7%;
-  font-size: 50px;
   font-weight: bold;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.smallTitle {
+  font-size: 40px;
 }
 
 .commonText,
@@ -124,12 +138,14 @@ footer a:hover {
 
 .narrowSection {
   flex: 1;
+  border-bottom: 2px solid white;
 }
 
 .wideSection {
   flex: 2;
   background-color: rgb(0, 33, 0);
   padding: 3%;
+  border-bottom: 2px solid white;
 }
 
 .wideSection h2 {
@@ -170,6 +186,8 @@ footer a:hover {
   object-fit: cover;
 }
 
-.flexElement h2 {
-  width: 70%;
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
